@@ -28,9 +28,9 @@ bhanu = {
     "role"       : "AI Engineer (transitioning from enterprise → AI-native)",
     "current"    : "IBM CIC — LLM + ServiceNow integration",
     "interests"  : ["RAG Systems", "LLM Engineering", "NLP", "MLOps"],
-    "building"   : "AI tools that solve real business problems",
-    "learning"   : ["LangGraph", "LlamaIndex", "FastAPI + ML deployment"],
-    "ask_me"     : "RAG architectures, hybrid search, or ServiceNow AI integration",
+    "building"   : ["IT Incident Predictor", "RAG Chatbot", "Resume Analyzer"],
+    "learning"   : ["Deep Learning", "Transformers", "LangGraph", "FastAPI + ML deployment"],
+    "ask_me"     : "RAG architectures, XGBoost + SHAP, or ServiceNow AI integration",
 }
 ```
 
@@ -38,8 +38,24 @@ bhanu = {
 
 ## 🚀 Featured Projects
 
-### 🤖 [RAG Chatbot with Hybrid Search](https://github.com/bhanu-bhadouria/RAG-Chatbot)
+### 🎯 [IT Incident Priority Predictor](https://github.com/bhanu-bhadouria/IT-Incident-priority-predictor) &nbsp;[![Live Demo](https://img.shields.io/badge/Live%20Demo-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://it-incident-priority-predictor-bpsb.streamlit.app)
+> Auto-classify P1 IT incidents before manual escalation — XGBoost + SHAP explainability
+
+**[→ Try the live demo](https://it-incident-priority-predictor-bpsb.streamlit.app)**
+
+- End-to-end ML pipeline: EDA → feature engineering → model comparison → deployment on a **real ServiceNow-style dataset**
+- Compared Decision Tree, Random Forest, and XGBoost — final model achieves **0.93 recall** and **0.76 F1** on 9:1 imbalanced data
+- **SHAP explainability** surfaces per-prediction feature contributions — tells the engineer *why* a ticket was flagged, not just *that* it was
+- Two-tab Streamlit app: single ticket prediction + batch CSV upload with downloadable results
+
+`Python` `XGBoost` `SHAP` `scikit-learn` `Streamlit` `Pandas`
+
+---
+
+### 🤖 [RAG Chatbot with Hybrid Search](https://github.com/bhanu-bhadouria/RAG-Chatbot) &nbsp;[![Live Demo](https://img.shields.io/badge/Live%20Demo-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://rag-chatbot-bpsb.streamlit.app)
 > Chat with any PDF using a ChatGPT-style interface — powered by hybrid FAISS + BM25 retrieval
+
+**[→ Try the live demo](https://rag-chatbot-bpsb.streamlit.app)**
 
 - Built **end-to-end RAG pipeline** from scratch: PDF ingestion → chunking → embedding → retrieval → generation
 - Implemented **hybrid search** (FAISS semantic + BM25 keyword) for more robust retrieval than vector-only approaches
@@ -70,15 +86,6 @@ bhanu = {
 
 `Python` `Scikit-learn` `Django` `HTML/CSS`
 
----
-
-### 🎵 [Music Genre Classification with LSTMs](https://github.com/bhanu-bhadouria)
-> Deep learning model classifying audio into genres using MFCC, chroma, and spectral features
-
-- Extracted audio features (MFCCs, spectral centroid, chroma, spectral contrast) with Librosa
-- Defined and trained a multi-layer LSTM network in PyTorch across 10 genre categories
-
-`Python` `PyTorch` `Librosa` `Deep Learning`
 
 ---
 
@@ -93,6 +100,8 @@ bhanu = {
 ![LangChain](https://img.shields.io/badge/LangChain-1c3c3c?style=flat&logo=langchain&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189733?style=flat&logo=xgboost&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-FF6B6B?style=flat&logoColor=white)
 
 **NLP & Search**
 
